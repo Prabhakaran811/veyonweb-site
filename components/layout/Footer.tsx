@@ -11,7 +11,7 @@ const slug = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
 export default function Footer() {
   const [software, industrial] = serviceGroups;
-  const companyLinks = [...navLinks.filter((l) => l.href !== "/services/iiot-solutions"), { href: "/contact", label: "Contact" }];
+  const companyLinks = [...navLinks, { href: "/contact", label: "Contact" }];
 
   return (
     <footer className="relative overflow-hidden bg-primary text-white">

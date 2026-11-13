@@ -27,9 +27,9 @@ export const serviceGroups: ServiceGroup[] = [
     title: "Industrial IoT & Automation",
     blurb: "Smart-industry solutions that connect machines, data and people.",
     items: [
-      { href: "/services/iiot-solutions", title: "Industrial IoT Solutions", desc: "Machine connectivity, edge gateways and live telemetry.", icon: Wifi },
+      { href: "/services#industrial-iot", title: "Industrial IoT Solutions", desc: "Machine connectivity, edge gateways and live telemetry.", icon: Wifi },
       { href: "/services#mes", title: "Manufacturing Execution Systems", desc: "Production tracking, downtime analysis and OEE intelligence.", icon: Workflow },
-      { href: "/services/plc-automation", title: "PLC & Industrial Automation", desc: "PLC programming, HMI, SCADA and electrical panels.", icon: Cpu },
+      { href: "/services#plc-automation", title: "PLC & Industrial Automation", desc: "PLC programming, HMI, SCADA and electrical panels.", icon: Cpu },
       { href: "/services#machine-monitoring", title: "Machine & Energy Monitoring", desc: "Asset utilization, power quality and energy management.", icon: Gauge },
       { href: "/services#industrial-communication", title: "Industrial Communication & Integration", desc: "Connecting PLCs, sensors and machines with your business software.", icon: Network },
     ],
