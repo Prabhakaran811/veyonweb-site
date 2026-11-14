@@ -24,21 +24,22 @@ export const serviceGroups: ServiceGroup[] = [
   },
   {
     id: "industrial",
-    title: "Industrial IoT & Automation",
+    title: "Industrial Automation & IOT",
     blurb: "Smart-industry solutions that connect machines, data and people.",
     items: [
       { href: "/services#industrial-iot", title: "Industrial IoT Solutions", desc: "Machine connectivity, edge gateways and live telemetry.", icon: Wifi },
       { href: "/services#mes", title: "Manufacturing Execution Systems", desc: "Production tracking, downtime analysis and OEE intelligence.", icon: Workflow },
       { href: "/services#plc-automation", title: "PLC & Industrial Automation", desc: "PLC programming, HMI, SCADA and electrical panels.", icon: Cpu },
-      { href: "/services#machine-monitoring", title: "Machine & Energy Monitoring", desc: "Asset utilization, power quality and energy management.", icon: Gauge },
       { href: "/services#industrial-communication", title: "Industrial Communication & Integration", desc: "Connecting PLCs, sensors and machines with your business software.", icon: Network },
+      { href: "/services#machine-monitoring", title: "Machine & Energy Monitoring", desc: "Asset utilization, power quality and energy management.", icon: Gauge },
     ],
   },
 ];
 
 export const industries: Omit<Item, "href">[] = [
   { title: "Foundries", desc: "Melting, moulding and furnace monitoring.", icon: Factory },
-  { title: "Automotive", desc: "Assembly and machining line automation.", icon: Car },
+    { title: "SME Factories", desc: "Affordable, scalable automation upgrades.", icon: Wrench },
   { title: "Process Industries", desc: "Batch and continuous process control.", icon: FlaskConical },
-  { title: "SME Factories", desc: "Affordable, scalable automation upgrades.", icon: Wrench },
+    { title: "Automotive", desc: "Assembly and machining line automation.", icon: Car },
+
 ];

@@ -5,7 +5,7 @@ import { useScroll, useTransform } from "framer-motion";
 import * as m from "framer-motion/m";
 import { ArrowRight } from "lucide-react";
 import { container, ease, fadeUp } from "@/lib/motion";
-import ConnectivityGraphic from "./ConnectivityGraphic";
+import Hero3D from "./Hero3D";
 
 const lines = ["Engineering", "Smarter", "Industries."];
 
@@ -47,15 +47,7 @@ export default function Hero() {
           </m.div>
         </m.div>
 
-        {/* Image reveal. Swap the graphic for a real photo: <Image src="/images/hero.jpg" fill alt="..." className="object-cover" priority /> */}
-        <m.div
-          className="relative mx-auto aspect-square w-full max-w-md rounded-2xl border border-white/10 bg-secondary/40 p-4 lg:max-w-none"
-          initial={{ clipPath: "inset(0 100% 0 0)", opacity: 0 }}
-          animate={{ clipPath: "inset(0 0% 0 0)", opacity: 1 }}
-          transition={{ duration: 1, delay: 0.4, ease }}
-        >
-          <ConnectivityGraphic />
-        </m.div>
+        <Hero3D />
       </div>
     </section>
   );

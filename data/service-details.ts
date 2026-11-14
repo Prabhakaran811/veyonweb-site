@@ -59,16 +59,16 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     bullets: ["PLC programming", "HMI design", "SCADA systems", "Electrical control panels"],
     page: "/services/plc-automation",
   },
-  "Machine & Energy Monitoring": {
-    id: "machine-monitoring",
-    problem: "Machine utilisation and energy use are invisible until the bill or the breakdown arrives.",
-    solution: "We monitor your machines and power so you can see where time and energy are being lost.",
-    bullets: ["Asset utilisation", "Machine status monitoring", "Power quality", "Energy management"],
-  },
   "Industrial Communication & Integration": {
     id: "industrial-communication",
     problem: "Machines, PLCs and business software don't talk to each other.",
     solution: "We link them together so shop-floor data flows into the systems your business uses.",
     bullets: ["PLC and machine connectivity", "Sensor integration", "Protocol integration", "Data to MES and ERP"],
+  },
+  "Machine & Energy Monitoring": {
+    id: "machine-monitoring",
+    problem: "Machine utilisation and energy use are invisible until the bill or the breakdown arrives.",
+    solution: "We monitor your machines and power so you can see where time and energy are being lost.",
+    bullets: ["Asset utilisation", "Machine status monitoring", "Power quality", "Energy management"],
   },
 };

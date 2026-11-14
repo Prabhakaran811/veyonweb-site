@@ -6,5 +6,5 @@ export const company = {
     "We sell solutions, not products. VEYON designs PLC, SCADA and IIoT systems and custom software that solve real problems for manufacturing industries.",
   location: "Coimbatore, Tamil Nadu, India",
   email: "",
-  phone: "",
+  phone: "+91 63829 34206",
 };

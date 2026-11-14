@@ -15,6 +15,18 @@ body { @apply bg-background text-slate-800 antialiased; }
   html { scroll-behavior: auto; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Small 3D cube used in the hero scene */
+.cube { position: relative; width: 48px; height: 48px; transform-style: preserve-3d; animation: cube-spin 24s linear infinite; }
+.cube i { position: absolute; inset: 0; border: 1px solid rgba(242, 201, 76, 0.7); background: rgba(242, 201, 76, 0.08); }
+.cube i:nth-child(1) { transform: translateZ(24px); }
+.cube i:nth-child(2) { transform: rotateY(180deg) translateZ(24px); }
+.cube i:nth-child(3) { transform: rotateY(90deg) translateZ(24px); }
+.cube i:nth-child(4) { transform: rotateY(-90deg) translateZ(24px); }
+.cube i:nth-child(5) { transform: rotateX(90deg) translateZ(24px); }
+.cube i:nth-child(6) { transform: rotateX(-90deg) translateZ(24px); }
+@keyframes cube-spin { to { transform: rotateX(360deg) rotateY(360deg); } }

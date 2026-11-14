@@ -7,6 +7,8 @@ const card =
   "group relative flex h-full flex-col overflow-hidden rounded-2xl border border-primary/10 bg-white p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-transparent hover:bg-primary hover:shadow-2xl hover:shadow-primary/25";
 
 export default function Services() {
+
+  const groups = serviceGroups.filter((g) => g.id !== "software");
   return (
     <section className="relative overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute -right-32 -top-24 h-80 w-80 rounded-full bg-accent/10 blur-3xl" />
@@ -22,7 +24,7 @@ export default function Services() {
         </Reveal>
 
         <div className="mt-12 space-y-16">
-          {serviceGroups.map((group) => (
+          {groups.map((group) => (
             <div key={group.id} id={group.id}>
               <Reveal className="flex flex-col gap-1 border-b border-primary/15 pb-4 sm:flex-row sm:items-end sm:justify-between">
                 <h3 className="text-xl font-bold text-primary sm:text-2xl">{group.title}</h3>
