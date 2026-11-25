@@ -32,16 +32,16 @@ export default function Header() {
     >
       <div className={`mx-auto flex max-w-7xl items-center justify-between px-4 transition-all duration-300 sm:px-6 lg:px-8 ${solid ? "h-16" : "h-20"}`}>
         <Link href="/" className="flex items-center">
-  <Image
-    src="/images/veyon_logo_white_text.png"
-    alt="VEYON Automation & IIoT"
-    width={180}
-    height={60}
-    priority
-    className={`w-auto object-contain transition-all duration-300 ${
-      solid ? "h-10" : "h-12"
-    }`}
-  />
+ <Image
+  src="/images/veyon_logo_white_text.png"
+  alt="VEYON Automation & IIoT"
+  width={300}
+  height={135}
+  priority
+  className={`w-auto object-contain transition-all duration-300 ${
+    solid ? "h-14" : "h-16"
+  }`}
+/>
 </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main">
