@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   title: "VEYON Automation & IIoT | Industrial Automation Company in Coimbatore",
   description:
     "IIoT, SCADA, PLC programming and control panel engineering for foundries, automotive and process industries across Tamil Nadu.",
+     icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1 };
